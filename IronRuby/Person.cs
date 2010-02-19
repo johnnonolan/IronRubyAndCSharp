@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PersonNamespace
+namespace IronRubyAndCSharp
 {
     public class Person
     {
-        public string firstName { get; set; }   
+        public string FirstName { get; set; }   
         public Person(string name)
         {
-            firstName = name;
+            FirstName = name;
         }
     }
 }

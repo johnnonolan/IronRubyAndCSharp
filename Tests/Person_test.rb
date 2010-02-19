@@ -1,20 +1,15 @@
 require "test/unit"
-require "../IronRuby/bin/debug/IronRuby.dll"
+require "../IronRuby/bin/debug/IronRubyAndCSharp.dll"
 
 class PersonTest < Test::Unit::TestCase
 
-  include PersonNamespace
+  include IronRubyAndCSharp
   
   def test_create_person_called_john
     john = Person.new("John")
     assert_not_nil(john)
-    assert_equal("John",Person.firstName)
+    assert_equal("John",Person.FirstName)
     
   end
-  # Fake test
-#  def test_fail
-#
-#    # To change this template use File | Settings | File Templates.
-#    fail("Not implemented")
-#  end
+ 
 end
